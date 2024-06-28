@@ -1,0 +1,36 @@
+{
+  "name": "speakease-frontend",
+  "version": "1.0.0",
+  "description": "Speakease frontend",
+  "main": "server/main.js",
+  "scripts": {
+    "init:testnets": "cd deploy-testnets && terraform init",
+    "plan:testnets": "cd deploy-testnets && terraform plan -lock=false",
+    "apply:testnets": "cd deploy-testnets && terraform apply -auto-approve -lock=false",
+    "build": "node server/build.js",
+    "deploy:testnets": "npm run build && npm run plan:testnets && npm run apply:testnets",
+    "init:mainnets": "cd deploy-mainnets && terraform init",
+    "plan:mainnets": "cd deploy-mainnets && terraform plan -lock=false",
+    "apply:mainnets": "cd deploy-mainnets && terraform apply -auto-approve -lock=false",
+    "deploy:mainnets": "npm run build && npm run plan:mainnets && npm run apply:mainnets",
+    "init:stable": "cd deploy-stable && terraform init",
+    "plan:stable": "cd deploy-stable && terraform plan -lock=false",
+    "apply:stable": "cd deploy-stable && terraform apply -auto-approve -lock=false",
+    "deploy:stable": "npm run build && npm run plan:stable && npm run apply:stable",
+    "deploy:all": "npm run build && npm run plan:testnets && npm run apply:testnets && npm run plan:mainnets && npm run apply:mainnets && npm run plan:stable && npm run apply:stable",
+    "dev": "node server/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Annyeoungcloud/speakease-frontend.git"
+  },
+  "author": "millerrabin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Annyeoungcloud/speakease-frontend.git/issues"
+  },
+  "homepage": "https://github.com/Annyeoungcloud/speakease-frontend.git#readme",
+  "devDependencies": {
+    "eslint": "^8.44.0"
+  }
+}

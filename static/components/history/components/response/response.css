@@ -1,0 +1,96 @@
+speakease-response {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem;  
+}
+
+speakease-response .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: linear-gradient(180deg, #A2FF88 0%, #5FE63A 100%);
+  border: 0.1rem solid #2ED300;
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  word-wrap: break-word;
+}
+
+speakease-response.important .text {
+  display: flex;
+  background: linear-gradient(180deg, #d3a200 0%, #e3dfcf 100%);
+  border: 0.1rem solid #d3a200;
+}
+
+speakease-response .corner {
+  display: none;
+  margin: -0.2rem 0 0 2rem;
+  width: 0;
+  height: 0;
+  border-top: 1rem solid #5FE53A;
+  border-right: 1rem solid transparent;
+}
+
+speakease-response:first-of-type .corner {
+  display: block;
+}
+
+speakease-response.important .corner {
+  border-top: 1rem solid #e3dfcf;
+  border-right: 1rem solid transparent;
+}
+
+speakease-response .end-icon {
+  display: none;
+  margin-top: 0.3rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+speakease-response .end-icon img{
+  width: 100%;
+  height: 100%;
+}
+
+speakease-response:first-of-type .end-icon{
+  display: block;
+}
+
+speakease-response button{  
+  border-radius: 1rem;
+  border: 0.1rem solid #9b9a9a;  
+  margin-top: 0.5rem;
+  background: #d8d8d8;
+  font-size: 1rem;  
+  padding: 0.5rem;
+  word-wrap: break-word;  
+  cursor: pointer;
+}
+
+speakease-response .text p {
+  margin: 0.5rem 0;
+}
+
+speakease-response .checkbox {
+  color: #002074;
+  border-radius: 0.5rem;
+  background: linear-gradient(180deg, #B9FBFF 11.89%, #00C5D1 68.66%, #00969F 100%);
+  border: 0.1rem solid #002074;
+}
+
+speakease-response h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+speakease-response h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+speakease-response h4 {
+  margin: 0;
+  font-size: 1rem;
+}

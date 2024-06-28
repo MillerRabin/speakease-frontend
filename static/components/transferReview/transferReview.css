@@ -1,0 +1,497 @@
+.TransferReview {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+speakease-transferreview.review .second-stage {
+  display: flex;
+}
+
+.TransferReview .second-stage {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TransferReview .third-stage {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #2ED300 0%, #24A700 100%);
+  height: 100%;
+}
+
+speakease-transferreview.wait .third-stage {
+  display: flex;
+}
+
+.TransferReview .forth-stage {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #2ED300 0%, #24A700 100%);
+  height: 100%;
+}
+
+speakease-transferreview.success .forth-stage {
+  display: flex;
+}
+
+.TransferReview .fifth-stage {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-top: 2rem
+}
+
+speakease-transferreview.results .fifth-stage {
+  display: flex;
+}
+
+
+speakease-transferreview .service-block {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+speakease-transferreview .service-block .page-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+speakease-transferreview {
+  width: 100%;
+  height: 100%;
+}
+
+speakease-transferreview .container {
+  width: 90%;
+  text-align: center;
+}
+
+speakease-transferreview .container .blocks {
+  border-radius: 1rem;
+  background: #F5F5F5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #AFAFAF;
+}
+
+speakease-transferreview .upper-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+speakease-transferreview .second-stage .second-block.blocks {
+  display: none;
+}
+
+speakease-transferreview .second-stage .upper-block {
+  justify-content: flex-start;
+}
+
+speakease-transferreview .upper-block .label {
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  text-align: end;
+  padding-right: 1rem;
+}
+
+speakease-transferreview .lower-block .sub-label {
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  text-align: end;
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+
+speakease-transferreview .lower-block {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+speakease-transferreview .second-stage .lower-block .sub-label {
+  width: 100%;
+  text-align: start;
+}
+
+speakease-transferreview .lower-block .green-button {
+  width: 65%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+speakease-transferreview .input {
+  width: 65%;
+}
+
+speakease-transferreview .input.password {
+  height: 2.5rem;
+    background: #FFFFFF;
+    border: 1px solid #AFAFAF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 0.5rem;
+    color: #000000;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    outline: none;
+}
+
+speakease-transferreview .input.password.wrong {
+  animation: blinker 1s 1 linear;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+    background-color: #FF0000;
+  }
+}
+
+speakease-transferreview .forth-block {
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+speakease-transferreview .forth-block .text-block {
+  display: flex;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #000;
+}
+
+
+speakease-transferreview .forth-block .top-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+speakease-transferreview .forth-block .top-block .text {
+  margin: 0 0.5rem 0 0.5rem;
+  width: 8rem;
+  text-align: left;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+speakease-transferreview .left-block {
+  width: 100%;
+}
+
+speakease-transferreview .forth-block .top-block .value {
+  font-size: 1rem;
+  text-align: left;
+  width: calc(100% - 9rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+speakease-transferreview .forth-block .top-block .bold {
+  font-weight: bold;
+}
+
+speakease-transferreview .forth-block .top-block .right-block .img-block {
+  width: 2.3rem;
+}
+
+speakease-transferreview .forth-block .top-block .right-block .img-block img {
+  width: 100%;
+  height: 100%;
+}
+
+speakease-transferreview .contact-select option {
+  color: #AFAFAF;
+  width: 100%;
+}
+
+speakease-transferreview .first-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+speakease-transferreview .second-stage .first-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+speakease-transferreview .second-stage .first-block .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+
+speakease-transferreview .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+speakease-transferreview .second-stage .middle-block .img {
+  height: 4rem;
+}
+
+speakease-transferreview .img {
+  height: 4rem;
+}
+
+speakease-transferreview .second-stage .first-block .img img {
+  width: 100%;
+  height: 100%;
+}
+
+speakease-transferreview .img img {
+  width: 100%;
+  height: 100%;
+}
+
+speakease-transferreview .second-stage .first-block .label {
+  margin-bottom: 0.5rem;
+}
+
+speakease-transferreview .label {
+  margin-bottom: 0.5rem;
+}
+
+speakease-transferreview .second-stage .first-block .value {
+  margin-top: 1rem;
+  color: #000000;
+  font-weight: bold;
+  font-size: inherit;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+speakease-transferreview .second-stage .bottom-block {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+speakease-transferreview .second-stage .bottom-block .amount-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+speakease-transferreview .second-stage .bottom-block .amount-block-label {
+  color: #AFAFAF;
+  font-size: 1.2rem;
+}
+
+speakease-transferreview .second-stage .bottom-block .amount-block-value {
+  color: #000000;
+  font-size: 2rem;
+}
+
+speakease-transferreview .second-stage .bottom-block button {
+  display: flex;
+  border-radius: 0.6rem;
+  font-weight: normal;
+  font-size: 1.4rem;
+  background-color: #2ED300;
+  color: #FFF;
+  width: 90%;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+speakease-transferreview .upper-block {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+speakease-transferreview .third-stage img {
+  width: 100%;
+  height: 100%;
+}
+
+speakease-transferreview img {
+  width: 100%;
+  height: 100%;
+}
+
+speakease-transferreview .third-stage .wh-middle {
+  height: 1rem;
+}
+
+speakease-transferreview .third-stage .wh {
+  height: 2rem;
+}
+
+speakease-transferreview .third-stage .bottom-block {
+  display: flex;
+  padding: 1rem;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width: 12rem;
+  border-radius: 0.7rem;
+  margin-top: 2rem;
+}
+
+speakease-transferreview .fifth-stage .TransferReview-id-label {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+speakease-transferreview .fifth-stage .TransferReview-id-label .value {
+  width: 100%;
+  overflow: hidden;
+  resize: none;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+speakease-transferreview .fifth-stage .TransferReview-id-label .value:focus {
+  outline: none;
+}
+
+speakease-transferreview .fifth-stage .notice-block {
+  padding: 1.5rem;
+  display: none
+}
+
+speakease-transferreview .fifth-stage .notice-block .top-block {
+  display: flex;
+  justify-content: flex-start;
+}
+
+speakease-transferreview .fifth-stage .notice-block .bottom-block .sub-label {
+  text-align: start;
+  color: #000000;
+  font-weight: normal;
+}
+
+speakease-transferreview .fifth-stage .img-block {
+  height: 2.3rem;
+  flex-shrink: 0;
+}
+
+speakease-transferreview .fifth-stage img {
+  width: 100%;
+  height: 100%;
+}
+
+speakease-transferreview .fifth-stage .send-block {
+  margin-bottom: 1rem;
+}
+
+speakease-transferreview .fifth-stage .recieve-block {
+  margin-bottom: 1rem;
+}
+
+speakease-transferreview .fifth-stage .value-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+speakease-transferreview .fifth-stage .date-block .value-block {
+  gap: 0.5rem;
+}
+
+speakease-transferreview .fifth-stage .date-block .value-block .value {
+  font-size: 0.9rem;
+}
+
+
+speakease-transferreview .fifth-stage .container .first-block {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #AFAFAF;
+  justify-content: space-between;
+}
+
+speakease-transferreview .fifth-stage .container .first-block .top-block-left {
+  width: 47%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+speakease-transferreview .fifth-stage .container .first-block .top-block-right {
+  width: 47%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+speakease-transferreview .fifth-stage .container .first-block .label {
+  color: #000000;
+  font-weight: normal;
+}
+
+speakease-transferreview .second-stage .upper-block {
+  margin: 0;
+}
+
+speakease-transferreview .second-stage .upper-block .label {
+  color: #AFAFAF;
+}
+
+speakease-transferreview .error {
+  display: none;
+  border: 0.1rem solid #FF0000;
+  word-wrap: break-word;
+}
+
+speakease-transferreview.error .error {
+  display: block;
+}
+
+speakease-transferreview .second-stage .bottom-block .approve:disabled {
+  color: #AFAFAF;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+}

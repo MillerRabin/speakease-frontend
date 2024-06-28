@@ -1,0 +1,107 @@
+speakease-audioplayer {
+  width: 100%;
+  margin: 0 1rem;
+}
+
+speakease-audioplayer * {
+  box-sizing: border-box;
+}
+
+speakease-audioplayer .audio-player {
+  background: linear-gradient(180deg, #A2FF88 0%, #5FE63A 100%);
+  border-radius: 8rem;
+  border: 0.1rem solid #2ED300;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 90%;
+}
+
+speakease-audioplayer .play-btn {
+  width: 3rem;
+  height: 3rem;
+  background: url("/components/history/components/audioPlayer/images/play_icon.svg") 100% 100% no-repeat;
+  appearance: none;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+speakease-audioplayer .play-btn.playing {
+  background: url("/components/history/components/audioPlayer/images/pause_icon.svg") 100% 100% no-repeat;
+}
+
+speakease-audioplayer .volume-bar {
+  width: 15rem;
+  min-width: 15rem;
+  height: 15rem;
+  background: url("./images/audio-player-icon-sprite.png") 50% center/500% 100% no-repeat;
+  position: relative;
+}
+
+speakease-audioplayer .volume-bar.half {
+  background: url("./images/audio-player-icon-sprite.png") 75% center/500% 100% no-repeat;
+}
+
+speakease-audioplayer .volume-bar.over {
+  background: url("./images/audio-player-icon-sprite.png") 100% center/500% 100% no-repeat;
+}
+
+speakease-audioplayer .progress-indicator {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+  align-items: center;
+  height: 2rem;
+  width: 100%;
+  color: #000000;
+}
+
+speakease-audioplayer .progress-bar {
+  width: 100%;
+  appearance: none;
+  margin: 0;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+}
+
+speakease-audioplayer .progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  height: 2vw;
+  width: 0;
+  box-shadow: -300px 0 0 300px #000000;
+}
+
+speakease-audioplayer .progress-bar::-moz-range-thumb {
+  appearance: none;
+  height: 2vw;
+  width: 0;
+  box-shadow: -300px 0 0 300px #ffffff21;
+}
+
+speakease-audioplayer .progress-bar::-ms-thumb {
+  appearance: none;
+  height: 2vw;
+  width: 0;
+  box-shadow: -300px 0 0 300px #ffffff21;
+}
+
+speakease-audioplayer .duration,
+.current-time {
+  font-size: 1.3rem;
+  text-shadow: 0 0 0.1vw #111;
+  color: #000000;
+}
+
+speakease-audioplayer .duration {
+  margin-left: 0.2vw;
+  margin-right: 0.5vw;
+}
+
+speakease-audioplayer .duration::before {
+  content: '/';
+  margin-right: 2px;
+}

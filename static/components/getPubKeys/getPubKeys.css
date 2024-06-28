@@ -1,0 +1,11 @@
+.getPubKeys speakease-response .text .el_pubkey {
+  color: #002074;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #002074;
+  background: linear-gradient(180deg, #B9FBFF 11.89%, #00C5D1 68.66%, #00969F 100%);
+}
+
+.getPubKeys speakease-response .text .pubkey_value {
+  padding-top: 0.5rem;
+  word-break: break-word;
+}

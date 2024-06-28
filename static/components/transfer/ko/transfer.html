@@ -1,0 +1,57 @@
+<div class="Transfer">
+  <div class="service-block">
+    <a href="/home.html" class="back-btn route">뒤로</a>
+    <div class="page-name">보내기</div>
+  </div>
+  <div class="container">
+    <div class="first-block blocks">
+      <div class="upper-block">
+        <div class="label">수신인</div>
+        <select id="contactSelect" class="contact-select input"></select>
+      </div>
+      <div class="lower-block">
+        <a href="/editContacts.html?type=AddRequest" class="green-button route">+ 새 연락처 추가</a>
+      </div>
+    </div>
+    <div class="second-block blocks">
+      <div class="upper-block">
+        <div class="label">코인 선택</div>
+        <select id="currencySelect" class="contact-select input"></select>
+      </div>
+      <div class="lower-block">
+        <div class="label">Select blockchain</div>
+        <select id="blockchainSelect" class="blockchain-select input"></select>
+      </div>
+      <div class="lower-block">
+        <div class="sub-label">&emsp;&emsp;&nbsp;보유량</div>
+        <input class="currency-amount input">
+      </div>
+    </div>
+    <div class="third-block blocks">
+      <div class="upper-block">
+        <div class="label">보낼 수량</div>
+        <input class="transfer-amount input">
+      </div>
+    </div>
+    <div class="forth-block">
+      <div class="top-block">
+        <div class="left-block">
+          <div class="text-block">
+            <div class="text">서비스 수수료:</div>
+            <div class="value service-fee">0</div>
+          </div>
+          <div class="text-block">
+            <div class="text">네트워크 수수료:</div>
+            <div class="value network-fee">0</div>
+          </div>
+          <div class="text-block">
+            <div class="text bold">총 합:</div>
+            <div class="total bold amount-value">--</div>
+          </div>
+        </div>
+      </div>
+      <button class="button review green-button" disabled>리뷰</button>
+    </div>
+    <div class="error-block blocks"></div>
+  </div>
+</div>

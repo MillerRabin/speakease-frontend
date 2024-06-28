@@ -1,0 +1,204 @@
+.Receipt {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+speakease-receipt {
+  width: 100%;
+}
+
+speakease-receipt .transfer-id-label {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+speakease-receipt .transfer-id-label .value {
+  width: 100%;
+  overflow: hidden;
+  resize: none;
+  font-size: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+speakease-receipt .transfer-id-label .value:focus {
+  outline: none;
+}
+
+speakease-receipt .notification-block {
+  padding: 1.5rem;
+  display: none;
+  background-color: #feffba;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-size: 1rem;
+  color: black;
+}
+
+speakease-receipt .img-block {
+  height: 2.3rem;
+  flex-shrink: 0;
+}
+
+speakease-receipt img {
+  width: 100%;
+  height: 100%;
+}
+
+speakease-receipt .send-block {
+  margin-bottom: 1rem;
+}
+
+speakease-receipt .recieve-block {
+  margin-bottom: 1rem;
+}
+
+speakease-receipt .value-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+speakease-receipt .date-block .value-block {
+  gap: 0.5rem;
+}
+
+speakease-receipt .date-block .value-block .value {
+  font-size: 0.9rem;
+}
+
+speakease-receipt .container {
+  width: 90%;
+  text-align: center;
+}
+
+
+speakease-receipt .container .first-block {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #AFAFAF;
+  display: flex;
+  justify-content: space-between;
+}
+
+speakease-receipt .container .first-block .top-block-left {
+  width: 47%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+speakease-receipt .container .first-block .top-block-right {
+  width: 47%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+speakease-receipt .container .first-block .label {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+speakease-receipt .second-block {
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+speakease-receipt .second-block .text-block {
+  display: flex;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #AFAFAF;
+}
+
+
+speakease-receipt .second-block .top-block {
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+speakease-receipt .second-block .top-block .text {
+  margin: 0 0.5rem 0 0.5rem;
+  width: 8rem;
+  text-align: left;
+}
+
+speakease-receipt .left-block {
+  width: 100%;
+}
+
+
+speakease-receipt .second-block .top-block .value {
+  font-size: 1rem;
+  text-align: left;
+  width: calc(100% - 9rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+speakease-receipt .second-block .top-block .bold {
+  font-weight: bold;
+}
+
+speakease-receipt .second-block .top-block .right-block .img-block {
+  width: 2.3rem;
+}
+
+speakease-receipt .second-block .top-block .right-block .img-block img {
+  width: 100%;
+  height: 100%;
+}
+
+speakease-receipt .second-block .left-block {
+  align-self: flex-start;
+  margin-bottom: 2rem;
+}
+
+speakease-receipt .text-block-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+speakease-receipt .second-block .text-block-bottom .text {
+  text-align: center;
+  color: #AFAFAF;
+}
+
+speakease-receipt .second-block .text-block-bottom .total-value-first {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+speakease-receipt .first-block .contact-value {
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+speakease-receipt .amount-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,57 @@
+<div class="Transfer">
+  <div class="service-block">
+    <a class="back-btn route">BACK</a>
+    <div class="page-name">Transfer</div>
+  </div>
+  <div class="container">
+    <div class="first-block blocks">
+      <div class="upper-block">
+        <div class="label">Choose Recipient</div>
+        <select id="contactSelect" class="contact-select input"></select>
+      </div>
+      <div class="lower-block">
+        <a href="/editContacts.html?type=AddRequest" class="green-button route">+ Add New Contact</a>
+      </div>
+    </div>
+    <div class="second-block blocks">
+      <div class="upper-block">
+        <div class="label">Choose Currency</div>
+        <select id="currencySelect" class="contact-select input"></select>
+      </div>
+      <div class="lower-block">
+        <div class="label">Select blockchain</div>
+        <select id="blockchainSelect" class="blockchain-select input"></select>
+      </div>
+      <div class="lower-block">
+        <div class="sub-label">Available Balance</div>
+        <input class="currency-amount input">
+      </div>
+    </div>
+    <div class="third-block blocks">
+      <div class="upper-block">
+        <div class="label">Choose Amount</div>
+        <input class="transfer-amount input">
+      </div>
+    </div>
+    <div class="forth-block">
+      <div class="top-block">
+        <div class="left-block">
+          <div class="text-block">
+            <div class="text">Service Fee:</div>
+            <div class="value service-fee">--</div>
+          </div>
+          <div class="text-block">
+            <div class="text">Network Fee:</div>
+            <div class="value network-fee">--</div>
+          </div>
+          <div class="text-block">
+            <div class="text bold">Total Amount:</div>
+            <div class="total bold amount-value">--</div>
+          </div>
+        </div>
+      </div>
+      <button class="button review green-button" disabled>Review Send</button>
+    </div>
+    <div class="error-block blocks"></div>
+  </div>  
+</div>

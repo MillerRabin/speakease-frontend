@@ -1,0 +1,7 @@
+speakease-preloader {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 100;
+}
+

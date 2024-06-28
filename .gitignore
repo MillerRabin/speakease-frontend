@@ -1,0 +1,10 @@
+node_modules
+.idea
+.vscode
+.terraform.tfstate
+.terraform.tfstate.backup
+.terraform.lock.hcl
+.terraform.tfstate.lock.info
+.terraform
+/static/styles
+/static/*.html

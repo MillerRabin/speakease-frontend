@@ -1,0 +1,206 @@
+speakease-buy {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Buy {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+speakease-buy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+speakease-buy .container {
+  width: 90%;
+  text-align: center;
+}
+
+
+speakease-buy .upper-block {
+  color: #AFAFAF;
+  margin: 0;  
+  justify-content: flex-end;
+  display: flex;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+speakease-buy .service-block {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+speakease-buy .service-block .page-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+speakease-buy .container .blocks {
+  border-radius: 1rem;
+  background: #F5F5F5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #AFAFAF;
+}
+
+speakease-buy .lower-block {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+speakease-buy .label {  
+  display: flex;
+  align-items: center;
+  text-align: end; 
+  justify-content: end;
+}
+
+speakease-buy .lower-block .sub-label {
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  text-align: end;
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+
+speakease-buy .lower-block .green-button {
+  width: 65%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+speakease-buy.error.contact-not-found .lower-block .green-button {
+  border: 0.1rem solid #FF0000;
+}
+
+speakease-buy .input {
+  width: 65%;
+  flex-shrink: 0;
+}
+
+speakease-buy.error.not-enough-money .transfer-amount {
+  border: 0.1rem solid #FF0000;
+}
+
+speakease-buy .first-block {
+  display: flex;
+  flex-direction: column;
+}
+
+
+speakease-buy .forth-block {
+  background-color: #FFF;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+speakease-buy.error .forth-block  {
+  display: none;
+}
+
+speakease-buy .error-block  {
+  display: none;
+  border: 0.1rem solid #FF0000;
+  background-color: #FFC0C0;
+  padding: 0.3rem;
+}
+
+speakease-buy.error .error-block {
+  display: block;
+  color: black;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+speakease-buy.error .error-block p {
+  margin: 0 0 0.5rem 0;
+}
+
+speakease-buy.error .error-block p:last-child {
+  margin: 0;
+}
+
+speakease-buy.error .error-block .list {
+  font-style: italic;
+}
+
+speakease-buy.error .error-block .contact {
+  font-weight: bold;
+}
+
+speakease-buy.error .error-block .sum {
+  font-weight: bold;
+}
+
+speakease-buy .forth-block .text-block {
+  display: flex;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #000;
+}
+
+speakease-buy .left-block {
+  width: 100%;
+}
+
+speakease-buy .forth-block .top-block {
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+speakease-buy .forth-block .top-block .text {
+  margin: 0 0.5rem 0 0.5rem;
+  width: 8rem;
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 0;
+  justify-content: flex-end;
+}
+
+speakease-buy .forth-block .top-block .value {
+  font-size: 1rem;
+  width: calc(100% - 9rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+speakease-buy .forth-block .top-block .bold {
+  font-weight: bold;
+}
+
+speakease-buy .contact-select option {
+  color: #AFAFAF;
+  width: 100%;
+}

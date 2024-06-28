@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Speakease voice wallet UI</title>
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Voice crypto wallet">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <script async src="https://cdn.transak.com/js/sdk/transak-v1.js"></script>
+  <script src="/components/recorder/recorder.js"></script>
+  <script src="/components/blockchain/bitcoin/bitcoinjs-lib.min.js"></script>
+  <script src="/node_modules/wallet-address-validator/dist/wallet-address-validator.min.js"></script>
+  <script src="/node_modules/tronweb/dist/TronWeb.js"></script>
+  <script src="/components/blockchain/solana/solanaDist.min.js"></script>    
+  <script src="/components/blockchain/stellar/stellar-sdk.min.js"></script> 
+  <script src="/components/blockchain/buffer.js"></script>
+  <script type="module" src="/index.js" type="module"></script>
+</head>
+
+<body>
+  <div id="Application">
+    <speakease-header></speakease-header>
+    <div id="Router"></div>
+    <speakease-history></speakease-history>
+    <speakease-activity class="gray-gradient-background"></speakease-activity>
+    <div class="speakease-list">
+      <div class="list-shadow">
+        <div class="list"></div>
+        <div id="indicator"></div>
+      </div>
+      <button class="btn-activity-accordion">Speak or Click Command</button>
+    </div>
+    <speakease-textinput></speakease-textinput>
+  </div>
+  <div id="Splasher" class="visible">
+    <div class="main-icon">
+      <img class="img-size" src="/images/SpeakEase_Icon_white_bg.png">
+    </div>
+    <div class="main-text">
+      <div class="table">
+        <div class="cell">
+          <div class="gmb-loader">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      © 2023 SpeakEase from NFTee
+    </div>
+  </div>
+</body>
+</html>
+

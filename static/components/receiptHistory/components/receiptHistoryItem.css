@@ -1,0 +1,65 @@
+receipthistory-item {
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+receipthistory-item .line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+receipthistory-item .blocks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+receipthistory-item .left-block {
+  word-wrap: break-word;  
+  flex-grow: 0;  
+  overflow: hidden;
+}
+
+receipthistory-item .operation {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+receipthistory-item .right-block {
+  background: linear-gradient(90deg, #2ED300 46.79%, #34F000 100%);
+  padding: 0 0.3rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+receipthistory-item .currency-block {
+  display: flex;
+  flex-direction: column;
+  width: 51.5%;
+  justify-content: center;
+}
+
+receipthistory-item .middle-block {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+receipthistory-item .currency-block .amount {
+  font-size: 1rem;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  word-wrap: break-word;  
+}

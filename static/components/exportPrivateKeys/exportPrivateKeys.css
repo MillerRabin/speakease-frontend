@@ -1,0 +1,38 @@
+.export-keys {
+    width: 100%;
+}
+
+.export-keys .pk_bcfamily svg {
+    width: 1em;
+    height: 1rem;
+}
+
+.export-keys .pk_bcfamily {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.export-keys .pk_family {
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.export-keys .copy_all_keys {
+    margin-top: 1rem;
+    color: #002074;
+    background: linear-gradient(180deg, #B9FBFF 11.89%, #00C5D1 68.66%, #00969F 100%);
+    border-radius: 0.5rem;
+    border: 0.1rem solid #002074;
+}
+.export-keys .pk_icon {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0.5rem 0 0.5rem 0;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #002074;
+    color: #002074;
+    background: linear-gradient(180deg, #B9FBFF 11.89%, #00C5D1 68.66%, #00969F 100%);
+}

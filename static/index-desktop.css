@@ -1,0 +1,30 @@
+html {
+  font-size: clamp(0.01px, 1vw, 30px);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+body #Router {
+  min-height: 0;
+  height: 100%;
+}
+
+#Application {
+  width: 30rem !important;
+}
+
+.speakease-list .list-shadow {
+  left: unset !important;
+  width: 30rem !important;
+  height: calc(100% - 10.5rem);
+}
+
+#Splasher {
+  width: 30rem !important;
+  background-color: #fff;
+}
+

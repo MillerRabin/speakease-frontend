@@ -1,0 +1,75 @@
+.taskbutton-container {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;  
+}
+
+button[is="speakease-taskbutton"] {
+  background-color: #B9B9B9;
+  border: 0.1rem solid #AFAFAF;
+  cursor: pointer;  
+  padding: 0.25rem 0.5rem;
+  min-width: 2rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  font-weight: normal;
+}
+
+button[is="speakease-taskbutton"].choosen {    
+  font-weight: bold;
+  border-width: 0.15rem;
+}
+
+button[is="speakease-taskbutton"].yes {
+  background: linear-gradient(180deg, #C5FFCB 11.89%, #59FF88 68.66%, #30F200 100%);
+  border: 0.1rem solid #004C08;
+  color: #004C08;
+}
+
+button[is="speakease-taskbutton"].import {
+  background: linear-gradient(180deg, #FFB9FC 11.89%, #CD00D1 68.66%, #9F0086 100%);
+  border: 0.1rem solid #4D0049;
+  color: black;
+}
+
+button[is="speakease-taskbutton"].generate {
+  background: linear-gradient(180deg, #FFF8BC 11.89%, #FFDB21 68.66%, #E4B200 100%);
+  border: 0.1rem solid #795e00;
+  color: black;
+}
+
+button[is="speakease-taskbutton"].no {
+  background: linear-gradient(180deg, #B9FBFF 11.89%, #00C5D1 68.66%, #00969F 100%);
+  border: 0.1rem solid #002074;
+  color: #002074;    
+}
+
+button[is="speakease-taskbutton"].back {
+  background: linear-gradient(180deg, #B9FBFF 11.89%, #00C5D1 68.66%, #00969F 100%);
+  border: 0.1rem solid #002074;
+  color: #002074;    
+}
+
+button[is="speakease-taskbutton"].add {
+  background: linear-gradient(180deg, #B9FBFF 11.89%, #00C5D1 68.66%, #00969F 100%);
+  border: 0.1rem solid #002074;
+  color: #002074;
+}
+
+button[is="speakease-taskbutton"].delete {
+  background: linear-gradient(180deg, #FFB9B9 11.89%, #FF1B1B 68.66%, #CE0000 100%);
+  border: 0.1rem solid #A70000;
+  color: #2e2424;
+}
+
+button[is="speakease-taskbutton"].rename {
+  background: linear-gradient(180deg, #FFB9FC 11.89%, #CD00D1 68.66%, #9F0086 100%);
+  border: 0.1rem solid #4D0049;
+  color: #4D0049;
+}
+
+button[is="speakease-taskbutton"].cancel {
+  background: linear-gradient(180deg, #FFB9B9 11.89%, #FF1B1B 68.66%, #CE0000 100%);
+  border: 0.1rem solid #A70000;
+  color: #A70000;
+}

@@ -1,0 +1,76 @@
+speakease-textinput {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 6.6rem;  
+  background-color: white;
+  padding: 0.5rem 0 0 1rem;
+  font-size: 1rem;
+  gap: 1.5rem;
+}
+
+speakease-textinput .left-part{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+speakease-textinput .input-and-btn {
+  display: flex;
+  width: 100%;
+  height:70%;
+  border: 0.1rem solid #AFAFAF;
+  border-radius: 1rem;
+}
+
+speakease-textinput .input-and-btn textarea {
+  display: block;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  padding: 0.5rem 0.5rem;
+  resize: none;
+  font-size: 1.2rem;
+  height: 100%;
+}
+
+speakease-textinput .input-and-btn textarea::placeholder {
+  color: #AFAFAF;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+speakease-textinput .input-and-btn textarea:focus {
+  outline: none;
+}
+
+speakease-textinput .input-and-btn button {
+  height: 100%;
+  padding: 0;
+  background: url('/components/textInput/images/Send_Icon.svg') 100% center no-repeat;
+  background-size: 2rem;
+  border: none;
+  background-color: transparent;
+  margin: 0 0 0 1rem;
+  width: 3.4rem;
+  background-position: center;
+}
+
+speakease-textinput .input-and-btn-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+speakease-textinput .lang-btn {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+  justify-content: flex-end;
+  margin-right: 0.7rem;
+}

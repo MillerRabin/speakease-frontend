@@ -1,0 +1,92 @@
+<div class="Buy">
+  <div class="service-block">
+    <a class="back-btn route">BACK</a>
+    <div class="page-name">Buy Crypto</div>
+  </div>
+  <div class="container">
+    <div class="first-block blocks">
+      <div class="upper-block">
+        <div class="label">Provider</div>
+        <select id="ProviderSelect" class="contact-select input"></select>
+      </div>
+      <div class="lower-block">
+        <div class="label">Buy crypto currency</div>
+        <select id="CurrencySelect" class="contact-select input"></select>
+      </div>
+      <div class="lower-block">
+        <div class="label">Blockchain</div>
+        <select id="BlockchainSelect" class="contact-select input"></select>
+      </div>
+    </div>
+    <div class="second-block blocks">
+      <div class="upper-block">
+        <div class="label">Fiat currency</div>
+        <select id="FiatSelect" class="contact-select input"></select>
+      </div>
+      <div class="lower-block">
+        <div class="label">Payment options</div>
+        <select id="TypeSelect" class="contact-select input"></select>
+      </div>      
+    </div>
+    <div class="third-block blocks">      
+      <div class="upper-block">
+        <div class="label">
+          <span>
+            Want to spend,
+            <span class="target-fiat"></span>
+          </span>
+        </div>
+        <input id="WantToSpend" class="buy-amount input">
+      </div>
+      <div class="lower-block">
+        <div class="label">
+          <span>
+            Want to buy crypto,
+            <span class="target-crypto"></span>
+          </span>
+        </div>
+        <input id="WantToBuy" class="buy-amount input">
+      </div>
+    </div>
+    <div class="forth-block">
+      <div class="top-block">
+        <div class="left-block">
+          <div class="text-block">
+            <div class="text">
+              <span>
+                You spend,
+                <span class="target-fiat"></span>
+              </span>
+            </div>
+            <div class="value fiat-amount">--</div>
+          </div>
+          <div class="text-block">
+            <div class="text">
+              <span>
+                You get,
+                <span class="target-crypto"></span>
+              </span>
+            </div>
+            <div class="value crypto-amount">--</div>
+          </div>
+          <div class="text-block">
+            <div class="text">Conversion rate:</div>
+            <div class="value conversion-rate">--</div>
+          </div>
+          <div class="text-block">
+            <div class="text">
+              <span>
+                Total fee,
+                <span class="target-fiat"></span>
+              </span>
+            </div>
+            <div class="value total-fee">--</div>
+          </div>
+        </div>
+      </div>
+      <button class="button review green-button" disabled>Confirm</button>
+    </div>
+    <div class="error-block blocks"></div>
+  </div>  
+</div>
+

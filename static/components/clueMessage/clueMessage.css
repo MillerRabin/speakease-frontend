@@ -1,0 +1,54 @@
+speakease-cluemessage {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+speakease-cluemessage .text {
+    align-items: center;
+    background: linear-gradient(180deg, #A2FF88 0%, #5FE63A 100%);
+    border: 1px solid #2ED300;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    word-wrap: break-word;
+}
+
+speakease-cluemessage.important .text {
+    display: flex;
+    background: linear-gradient(180deg, #d3a200 0%, #e3dfcf 100%);
+    border: 1px solid #d3a200;
+}
+speakease-cluemessage .corner {
+    display: none;
+    margin: -0.2rem 0 0 2rem;
+    width: 0;
+    height: 0;
+    border-top: 1.5rem solid #5FE53A;
+    border-right: 1.5rem solid transparent;
+}
+
+speakease-cluemessage:first-of-type .corner {
+    display: block;
+}
+
+speakease-cluemessage.important .corner {
+    margin: -0.2rem 0 0 1rem;
+    width: 0;
+    height: 0;
+    border-top: 1.5rem solid #e3dfcf;
+    border-right: 1.5rem solid transparent;
+}
+
+speakease-cluemessage .end-icon {
+    display: block;
+    margin-top: 0.3rem;
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+speakease-cluemessage .end-icon img{
+    width: 100%;
+    height: 100%;
+}

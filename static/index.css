@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: clamp(0.01px, 4.2vw, 30px);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Proxima Nova';
+}
+
+.hidden {
+  display: none !important;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body #Application {
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+}
+
+body speakease-history {
+  display: none;
+}
+
+
+body speakease-activity {
+  display: none;
+}
+
+body.history speakease-history {
+  display: flex;
+}
+
+body.focused speakease-header {
+  background: rgb(159, 253, 140);
+}
+
+body.called speakease-header {
+  background: rgb(100, 253, 140);
+}
+
+body.called.focused speakease-header {
+  background: rgb(100, 253, 140);
+}
+
+body.error speakease-header {
+  background: #FF7373 !important;
+}
+
+body.focused.error speakease-header .header-login .auth-info .user-avatar {
+  background: url('/components/header/images/microphone_icon_white.png') 100% center no-repeat;
+  background-size: contain;
+}
+
+body.called.focused.error speakease-header .header-login .auth-info .user-avatar {
+  background: url('/components/header/images/microphone_icon_white.png') 100% center no-repeat;
+  background-size: contain;
+}
+
+body.error speakease-header .header-login .auth-info .user-avatar {
+  background: url('/components/header/images/microphone_icon_white.png') 100% center no-repeat;
+  background-size: contain;
+}
+
+body.focused.error speakease-header .header-login .logo {
+  background: url('/components/header/images/SpeakEase-Icon_black.png') 100% center no-repeat;
+  background-size: contain;
+}
+
+body.called.focused.error speakease-header .header-login .logo {
+  background: url('/components/header/images/SpeakEase-Icon_black.png') 100% center no-repeat;
+  background-size: contain;
+}
+
+body.error speakease-header .header-login .logo {
+  background: url('/components/header/images/SpeakEase-Icon_black.png') 100% center no-repeat;
+  background-size: contain;
+}
+
+body.called.focused.error speakease-header header.c .img-div {
+  background: url('/components/header/images/SpeakEase_Logo_Vertical_FINAL_black.png') 100% center no-repeat;
+  background-size: contain;
+}
+
+body.activity speakease-activity {
+  display: flex;
+}
+
+body.blinking .speakease-list .list a.general.sign-in {
+  background: linear-gradient(180deg, #FF9595 0%, #F04343 71.85%, #FF1919 114.16%);
+}
+
+body.blinking .speakease-list .list a.general.sign-in:after {
+  border-color: #F04343 #F04343 transparent transparent;
+}
+
+.gray-gradient-background {
+  background: linear-gradient(180deg, rgb(245, 245, 245) 0%, #D9D9D9 100%);
+}
+
+body.loaded #Application {
+  background: linear-gradient(0deg, rgb(217, 217, 217) 0%, #FFFFFFFF 100%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body #Splasher {
+  /* background: linear-gradient(180deg, #2ED300 0%, #24A700 100%); */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+body.loaded #Splasher {
+  display: none;
+}
+
+
+body #Router {
+  flex-grow: 0;
+  min-height: 70%;
+  overflow: auto;
+  display: block;
+}
+
+body.history #Router {
+  display: none;
+}
+
+body.activity #Router {
+  display: none;
+}
+
+body.ui #Router {
+  display: block;
+}
+
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+#Splasher .main-icon {
+  width: 10rem;
+  padding-top: 5rem;
+}
+
+#Splasher .main-text{
+  width: 11rem;
+  height: 11rem;
+  padding-top: 4rem;
+}
+
+#Splasher .footer{
+  position: fixed;
+  bottom: 3rem;
+  width: 14rem;
+  height: 2rem;
+}
+
+#Splasher .img-size{
+  width: 100%;
+  height: 100%;
+}
+
+.green-button {
+  display: flex;
+  border-radius: 0.6rem;
+  font-weight: normal;
+  font-size: 1.4rem;
+  background-color: #2ED300;
+  color: #FFF;
+  width: 100%;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.green-button:disabled {
+  color: #AFAFAF;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+}
+
+.input {
+  width: 100%;
+  height: 3rem;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 0.5rem;
+  color: #000000;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+  outline: none;
+}
+
+.back-btn {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.back-btn::before {
+  content: "<";
+  color: #2ED300;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#Splasher  .gmb-loader {
+  font-size: 0;
+  display: inline-block;
+  position: relative;
+  height: 120px;
+  width: 120px;
+}
+#Splasher .gmb-loader div {
+  background: #2ED300;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  position: absolute;
+  -webkit-animation: gmb-bounce 1.75s infinite;
+          animation: gmb-bounce 1.75s infinite;
+  top: 50%;
+  margin-top: -15px;
+}
+#Splasher .gmb-loader div:nth-child(2) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  left: 50%;
+  margin-left: -15px;
+}
+#Splasher .gmb-loader div:nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  right: 0;
+}
+
+@-webkit-keyframes gmb-bounce {
+  10% {
+    transform: translate3d(0, 30px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+            animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    height: 30px;
+  }
+  14% {
+    height: 90px;
+  }
+  15% {
+    height: 30px;
+    transform: translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1);
+            animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1);
+  }
+  35% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes gmb-bounce {
+  10% {
+    transform: translate3d(0, 30px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+            animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    height: 30px;
+  }
+  14% {
+    height: 90px;
+  }
+  15% {
+    height: 30px;
+    transform: translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1);
+            animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1);
+  }
+  35% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#Splasher .table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#Splasher .table .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.service-block {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.service-block .page-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  left: 21%;
+  transform: translateX(-50%);
+}
+
+.wrap {
+  word-wrap: break-word;
+  width: 100%;
+}

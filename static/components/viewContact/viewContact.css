@@ -1,0 +1,147 @@
+.ViewContact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+viewcontactwallet-item {
+    width: 100%;
+    display: block;
+}
+
+speakease-viewcontact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+speakease-viewcontact .container{
+    width: 90%;
+    overflow-y: auto;
+}
+
+speakease-viewcontact .service-block {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+speakease-viewcontact .service-block .page-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    left: 21%;
+    transform: translateX(-50%);
+}
+
+speakease-viewcontact .person-block {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 0.5rem;
+    border-bottom: 0.2rem solid #AFAFAF;
+    padding-bottom: 1rem;
+}
+
+speakease-viewcontact .info-block{
+    background: #FFFFFF;
+    border: 0.1rem solid #AFAFAF;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+viewcontactwallet-item .top-block{
+    display: flex;
+}
+
+viewcontactwallet-item .wrapper{
+    padding: 1rem 0;
+    border-bottom: 0.15rem solid #AFAFAF;
+    width: 100%;
+}
+
+viewcontactwallet-item .top-block .wallet-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;;
+    border-right: 0.15rem solid #2ED300;
+    padding-right: 1rem;
+}
+
+viewcontactwallet-item .top-block .wallet-info .img-block{
+    width: 1.9rem;
+    height: 2rem
+}
+
+viewcontactwallet-item .top-block .wallet-info .img-block img{
+    width: 100%;
+    height: 100%;
+}
+
+viewcontactwallet-item .top-block .coin-info{
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+viewcontactwallet-item .top-block .coin-info .coin-net{
+   font-weight: bold;
+}
+
+viewcontactwallet-item .address{
+    max-width: 75%;
+    word-break: break-all;
+}
+
+viewcontactwallet-item .label-icon-block{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+viewcontactwallet-item .tooltip{
+    position: absolute;
+    z-index: 10;
+    background: #2ED300;
+    color: #FFF;
+    border-radius: 0.3rem;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+viewcontactwallet-item .tooltip.visible{
+    display: flex;
+}
+
+viewcontactwallet-item .edit-btn{
+    background: url('/components/viewContact/images/edit_contact_icon.png') 100% center no-repeat;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+}
+
+viewcontactwallet-item .label-icon-block .label{
+    color: #2ED300;
+    font-weight: bold;
+}

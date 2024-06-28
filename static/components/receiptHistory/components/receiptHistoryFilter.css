@@ -1,0 +1,47 @@
+speakease-filters {
+  width: 90%;
+  margin-bottom: 0.5rem;
+}
+
+speakease-filters .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+speakease-filters .from {
+  background: #FFB526;
+  border: 0.2rem solid #CA8500;
+}
+
+speakease-filters .to {
+  background: #FFB526;
+  border: 0.2rem solid #CA8500;
+}
+
+speakease-filters .currency {
+  background: #26D8FF;
+  border: 0.2rem solid #007B96;
+}
+
+speakease-filters .date {
+  background: #13e80c;
+  border: 0.2rem solid #0ab904;
+}
+
+
+speakease-filters .amount {
+  background: #FBFF26;
+  border: 0.2rem solid #AFBE00;
+}
+
+speakease-filters .item {
+  height: 2rem;
+  padding: 0.4rem;
+  min-width: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 0.4rem;
+}

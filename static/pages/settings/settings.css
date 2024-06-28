@@ -1,0 +1,67 @@
+.Settings {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Settings .service-block {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 3vw;
+    margin: 7vw 0;
+}
+
+.Settings .service-block .back-btn {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.Settings .service-block .back-btn::before {
+    content: "<";
+    color: #2ED300;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.Settings .service-block .page-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    left: 21%;
+    transform: translateX(-50%);
+}
+
+.Settings .main-block {
+    background: #F5F5F5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.Settings .main-block .btn {
+    font-size: 1rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}

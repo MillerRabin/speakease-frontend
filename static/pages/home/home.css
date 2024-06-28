@@ -1,0 +1,195 @@
+.Home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem 1rem 1rem;
+  gap: 1rem;
+  background-color: #f0f0f0;
+}
+
+.Home .main-blocks {
+  background-color: #F5F5F5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.Home .top-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+}
+
+.Home .top-block .balance-btn {
+  border: 0.2rem solid #000000;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  padding: 0.6rem 0.6rem;
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  justify-content: center;
+  align-items: center;
+  min-width: 27%;
+}
+
+.Home .top-block .wallet {
+  display: flex;
+  width: 55%;
+  gap: 0.6rem;
+  height: 100%;
+  align-items: center;
+}
+
+.Home .top-block .wallet .wallet-icon {
+  width: 4rem;
+  height: 3rem;
+  max-width: 4rem;
+}
+
+.Home .top-block .wallet .wallet-icon img {
+  height: 100%;
+}
+
+.Home .wallet-info {
+  max-width: 70%;
+}
+
+
+.Home .top-block .wallet .wallet-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #AFAFAF;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.Home .top-block .wallet .wallet-label {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.Home .middle-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.Home .btns-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.Home .middle-block .btn {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  color:black;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.Home .middle-block .btn:visited {
+  color:black;
+}
+
+.Home .middle-block .btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+}
+
+.Home .middle-block .btn .img {
+  width: 6rem;
+  height: 6rem;
+  background: #2ED300;
+  border: 0.2rem solid #A2FF88;
+  border-radius: 0.6rem;
+}
+
+.Home .middle-block .btn[disabled] .img {
+  background: #E4E4E4;
+  border: 0.2rem solid #AFAFAF;
+}
+
+.Home .middle-block .btn img {
+  width: 60%;
+  height: 70%;
+}
+
+.Home .horizontal-btn {
+  background: #2ED300;
+  border: 0.15rem solid #A2FF88;
+  border-radius: 0.4rem;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  padding: 0.9rem;
+}
+
+.Home .bottom-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1rem;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: inherit;
+}
+
+.Home .bottom-block .icon-block .label{
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.Home .bottom-block .icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center;
+  gap: 1rem;
+  width: 16%;
+  text-decoration: none;;
+}
+
+.Home .bottom-block button{
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.Home .sendError{
+  background: url('/pages/home/images/ICON_feedback.png') 100% center no-repeat;
+}
+
+.Home .icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}

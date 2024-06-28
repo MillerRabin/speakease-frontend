@@ -1,0 +1,168 @@
+.ExchangeRates .container {
+    display: none;
+    flex-direction: column;
+    width: 90%;
+    margin: 1vw 0;
+    border-radius: 3vw;
+    padding: 3vw 0;
+    box-shadow: 0px -1px 8px 2px rgba(34, 60, 80, 0.12);
+    background-color: #F5F5F5;
+}
+
+.ExchangeRates .container.visible {
+    display: flex;
+}
+
+.ExchangeRates {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+exchangerates-item {
+    display: flex;
+    justify-content: center
+}
+
+speakease-exchangerates {
+    overflow-y: auto;
+    width: 100%;
+}
+
+
+exchangerates-item .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 17vw;
+    max-height: 4rem;
+    margin: 1vw 0;
+    padding: 0 3vw;
+    background: #FFFFFF;
+    border-radius: 3vw;
+}
+
+exchangerates-item.active .wrapper {
+    box-shadow: 0px 4px 10px rgba(46, 211, 0, 0.5), inset 0px 0px 5px rgba(46, 211, 0, 0.5);
+}
+
+exchangerates-item .wrapper .value-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+exchangerates-item .wrapper .value-block .short-name{
+    width: 14vw;
+    height: 10vw;
+    display: flex;
+    border-radius: 100vw;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    color: #AFAFAF;
+}
+
+exchangerates-item.active .wrapper .value-block .short-name{
+    color: #000000;
+}
+
+exchangerates-item .wrapper .full-name{
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #AFAFAF;
+}
+
+exchangerates-item.active .wrapper .full-name{
+    color: #000000;
+}
+
+exchangerates-item .wrapper .info-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    font-size: 1.4rem;
+    gap: 2vw;
+}
+
+exchangerates-item .wrapper .value-block .exchange-value{
+    font-size: 1.3rem;
+    margin-left: 0.9rem;
+}
+
+exchangerates-item .icon-block{
+    width: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+exchangerates-item .icon-block img{
+    width: 100%;
+}
+
+exchangerates-item .name-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    max-height: 3rem;
+    margin: 0 1vw;
+}
+
+.ExchangeRates .label{
+    align-self: center;
+    margin: 1vw 0;
+    color: #AFAFAF;
+    font-size: 0.8rem;
+}
+
+.ExchangeRates speakease-preloader {
+    display: none;
+}
+
+.ExchangeRates speakease-preloader.visible {
+    display: block;
+}
+
+exchangerates-item .analitic-block {
+    display: flex;
+    width: 3rem;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+} 
+
+exchangerates-item .analitic-block .analitic-block-img{
+    display: flex;
+    align-items: center;
+}
+
+exchangerates-item .analitic-block .analitic-block-img span{
+    font-weight: bold;
+}
+
+exchangerates-item .analitic-block .analitic-block-img img{
+    width: 1rem;
+    height: 1.3rem;
+    object-fit: contain;
+}
+
+.ExchangeRates .service-block {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+.ExchangeRates .service-block .page-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }

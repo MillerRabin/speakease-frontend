@@ -1,0 +1,10 @@
+.ExchangeRates .container {
+      padding: 1rem 0;
+      border-radius: 1rem;
+}
+
+exchangerates-item .wrapper {
+      margin: 0.5rem 0;
+      padding: 0 0.5rem;
+      border-radius: 1rem;
+}

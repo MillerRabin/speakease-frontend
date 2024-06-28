@@ -1,0 +1,27 @@
+{
+  "name": "speakease-frontend-static",
+  "version": "1.0.0",
+  "description": "speakease frontend",
+  "main": "server/main.js",
+  "scripts": {
+    "start": "node ../server/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Annyeoungcloud/speakease-Frontend.git"
+  },
+  "author": "millerrabin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Annyeoungcloud/speakease-frontend.git/issues"
+  },
+  "homepage": "https://github.com/Annyeoungcloud/speakease-frontend.gitt#readme",
+  "dependencies": {
+    "cox-postposition": "^1.4.1",
+    "intention-can-manage-tasks": "^0.2.3",
+    "intention-can-query-entities": "0.2.5",
+    "intention-storage": "^0.3.33",
+    "tronweb": "^5.3.0",
+    "wallet-address-validator": "^0.2.4"
+  }
+}

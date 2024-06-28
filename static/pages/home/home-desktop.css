@@ -1,0 +1,12 @@
+.Home .middle-block .top-block{
+  display: flex;
+  gap: 1rem;
+}
+
+.Home .middle-block .top-block  .wallet{
+  width: 100%;
+}
+
+.Home .top-block .balance-btn {
+  text-align: center;
+}

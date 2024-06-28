@@ -1,0 +1,23 @@
+.signin-user-status {
+  animation: color-change 3s infinite;
+  padding: 0.5rem 0;
+  text-transform: lowercase;
+  color:#176517;
+}
+
+.signin-user-status.animated {
+  animation: triple-dots 3s infinite;
+}
+
+
+@keyframes color-change {
+  0% { color: #176517; }
+  33% { color: #449444; }
+  66% { color: #176517; }
+}
+
+@keyframes triple-dots {
+  0% { color: #176517; clip-path: inset(0 1ch 0 0); }
+  33% { color: #449444; clip-path: inset(0 0.5ch 0 0); }
+  66% { color: #176517; clip-path: inset(0 0 0 0); }
+}

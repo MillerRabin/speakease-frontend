@@ -1,5 +1,5 @@
 {
-  "name": "sidogames-frontenddev-server",
+  "name": "speakease-frontend-dev-server",
   "version": "1.0.0",
   "description": "dev Frontend Server",
   "main": "main.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Annyeoungcloud/MFL-Frontend.git"
+    "url": "https://github.com/MillerRabin/speakease-frontend.git"
   },
   "author": "millerrabin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Annyeoungcloud/MFL-Frontend.git/issues"
+    "url": "https://github.com/MillerRabin/speakease-frontend/issues"
   },
-  "homepage": "https://github.com/Annyeoungcloud/MFL-Frontend.git#readme",
+  "homepage": "https://github.com/MillerRabin/speakease-frontend#readme",
   "dependencies": {
     "bitcoinjs-lib": "^6.1.0",
     "browserify": "^17.0.0",

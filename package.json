@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Annyeoungcloud/speakease-frontend.git"
+    "url": "git@github.com:MillerRabin/speakease-frontend.git"
   },
   "author": "millerrabin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Annyeoungcloud/speakease-frontend.git/issues"
+    "url": "https://github.com/MillerRabin/speakease-frontend/issues"
   },
-  "homepage": "https://github.com/Annyeoungcloud/speakease-frontend.git#readme",
+  "homepage": "https://github.com/MillerRabin/speakease-frontend#readme",
   "devDependencies": {
     "eslint": "^8.44.0"
   }

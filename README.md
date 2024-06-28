@@ -17,7 +17,7 @@ Speakease-Fronend
 ### Installation
   - Clone the repository
   ```
-  https://github.com/Annyeoungcloud/speakease-frontend.git
+  git clone git@github.com:MillerRabin/speakease-frontend.git
   ```
   
   - Install dependencies

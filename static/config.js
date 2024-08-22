@@ -13,12 +13,12 @@ import bitcointHistory from "/components/blockchain/history/bitcoin.js";
 import localHistory from "/components/blockchain/history/local.js";
 import transak from  "/components/blockchain/providers/transak.js";
 
-const isStorageDebug = false;
+const isStorageDebug = true;
 const isDebug = window.location.hostname == 'localhost';
 // export const isTest = true;
 export const isTest = (window.location.hostname != 'app.speakease.co') && (window.location.hostname != 'app-mainnets.speakease.co');
 
-const prodStorage = { origin: 'node.speakease.co', port: 443 };
+const prodStorage = { origin: 'node.int-t.com', port: 10010 };
 const localStorage = { origin: 'localhost', port: 10010 };
 
 const node = isStorageDebug ? localStorage : prodStorage;

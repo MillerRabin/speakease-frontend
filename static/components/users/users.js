@@ -78,7 +78,7 @@ async function uploadVoiceData(deviceId, blob) {
   for (let i = 0; i < maxUploadTry; i++) {
     try {
       const { url, status } = await fetch(
-        `https://voice-storage.speakease.co/${deviceId}/${generateUUID()}.wav`,
+        `https://storage.int-t.com/voice-data/${deviceId}/${generateUUID()}.wav`,
         {
           method: "PUT",
           headers: {
